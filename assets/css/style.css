@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    overflow-x: hidden;
+    background: url(/assets/images/bbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-gray {
+    background: rgba(245, 244, 244, 0.755);
+}
+
+.login-img {
+    background-image: url('../images/help6.jpeg');
+    background-size: cover;
+    /* background-clip: content-box; */
+    background-origin: border-box;
+    border: solid 2px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* padding: 0px 30px; */
+    width: 400px;
+    height: 420px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.register-img {
+    background-image: url('../images/helpdesk0.jpg');
+    background-size: cover;
+    /* background-clip: content-box; */
+    background-origin: border-box;
+    border: solid 2px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px;
+    width: 400px;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.glassmorphic-container {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.585);
+    padding: 15px 20px;
+    width: 400px;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.glassmorphic-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.glassmorphic-container input[type="text"],
+.glassmorphic-container input[type="email"],
+.glassmorphic-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(234, 232, 232);
+    border-left: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #002365;
+}
+
+.glassmorphic-container input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+#desk {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    padding: 15px;
+    max-width: 600px;
+    /* min-height: 450px; */
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#desk form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#desk input[type="text"],
+#desk textarea {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(234, 232, 232);
+    border-left: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #002365;
+}
+
+#desk input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.bg-deepblue {
+    background-color: #002365 !important;
+}
+
+.text-deepblue {
+    color: #002365 !important;
+}
+
+.glassmorphic-container input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.glassmorphic-container input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* For Webkit browsers (e.g. Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of vertical scrollbar */
+    height: 10px;
+    /* Height of horizontal scrollbar */
+    border-radius: 5px;
+    /* Border radius to make it look rounded */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Make scrollbar track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #002365;
+    /* Color of scrollbar thumb */
+    border-radius: 5px;
+    /* Border radius to match scrollbar */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    /* Set the width of the scrollbar */
+}
+
+/* For Microsoft Edge and Internet Explorer */
+html {
+    -ms-overflow-style: none;
+    /* Hide the scrollbar */
+    scrollbar-width: thin;
+    /* Set the width of the scrollbar */
+}
+
+/* Hide scrollbar in Edge */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .login-img {
+        display: none;
+        background-image: url('../images/help6.jpeg');
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 30px;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .glassmorphic-container {
+        background: rgba(255, 255, 255, 0.55);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 30px;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
