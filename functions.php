@@ -3,16 +3,32 @@
 $con = connect();
 
 //view helps
-function viewhelps()
+function viewhelps(): array
 {
     global $con;
     $query = $dconn = $con->prepare("select * from helps");
     //bind parameters
     if ($query->execute()) {
+        $result = $query->get_result()->fetch_all(MYSQLI_ASSOC);
+
+        return $result;
+    }
+    return [];
+}
+//view help
+function viewhelp(int $id): array
+{
+    global $con;
+    $query = $dconn = $con->prepare("select * from helps where id=?");
+
+    //bind parameters
+    $query->bind_param("i", $id);
+    if ($query->execute()) {
         $result = $query->get_result()->fetch_assoc();
 
         return $result;
     }
+    return [];
 }
 //login
 if (isset($_POST['login'])) {
